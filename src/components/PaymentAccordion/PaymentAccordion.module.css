@@ -1,0 +1,86 @@
+.cardImages {
+  margin: 2% auto;
+}
+
+.cardDetails_1,
+.cardDetails_2,
+.paymentDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details p:first-child {
+  font-weight: bold;
+  font-size: 14pt;
+}
+.details p:last-child {
+  margin-top: 10%;
+  color: grey;
+  font-size: 9pt;
+  font-weight: bold;
+}
+.details p:last-child:hover {
+  cursor: pointer;
+}
+
+.savingDetails {
+  border-radius: 100px;
+  background-color: darkgreen;
+  color: white;
+  width: max-content;
+  padding: 0.1rem 0.5rem;
+  font-size: 9pt;
+}
+
+.savingDetails > p > span {
+  margin-right: 0.5rem;
+}
+
+.finalPaymentButton {
+  margin: 2% auto;
+}
+
+.finalPaymentButton > p,
+.finalPaymentButtonMobile > p {
+  margin: 2% auto;
+  color: grey;
+  font-size: 9pt;
+}
+
+.cardDetails_1_mobile,
+.cardDetails_2_mobile,
+.finalPaymentButtonMobile {
+  display: none;
+}
+
+.additionalData {
+  margin-right: 2%;
+}
+
+@media screen and (max-width: 390px) {
+  .cardDetails_1,
+  .cardDetails_2,
+  .finalPaymentButton {
+    display: none;
+  }
+  .cardDetails_1_mobile,
+  .cardDetails_2_mobile,
+  .finalPaymentButtonMobile {
+    display: block;
+  }
+
+  .paymentDetails {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .details p:last-child,
+  .savingDetails {
+    margin: 5% 0%;
+  }
+
+  .brs {
+    display: none;
+  }
+}

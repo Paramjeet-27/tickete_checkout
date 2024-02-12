@@ -1,0 +1,15 @@
+.accordionQuestion {
+  border: solid 2px grey;
+}
+.container {
+  margin: 0% 2% 5% 2%;
+}
+
+.cardQuestions {
+  margin: 0;
+}
+.cardQuestions > span {
+  margin-right: 3%;
+  font-weight: bold;
+  font-size: 12pt;
+}

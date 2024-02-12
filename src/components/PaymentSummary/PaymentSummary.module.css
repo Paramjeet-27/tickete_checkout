@@ -1,0 +1,126 @@
+h6,
+p {
+  margin: 0;
+}
+
+.outerContainer {
+  width: 90%;
+  margin: auto;
+}
+
+.container {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 5% auto;
+  margin-bottom: 0%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paymentSection {
+  width: 69%;
+}
+
+.summarySection {
+  width: 29%;
+}
+
+h6 {
+  font-weight: bold;
+}
+
+.infocard_1,
+.infocard_2,
+.detialsForm,
+.additionalDetialsForm,
+.paymentMethod {
+  margin: 5% auto;
+  border-radius: 10px;
+}
+
+.infocard_1:hover {
+  cursor: pointer;
+}
+
+.detialsForm > p,
+.additionalDetialsForm > p,
+.paymentMethod > p {
+  color: grey;
+}
+
+.infocard_1,
+.infocard_2 {
+  border: solid 1px rgb(218, 218, 218);
+  padding: 1.5% 2.5%;
+  margin: 2% auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.infocard_1 {
+  margin: 5% auto;
+}
+
+.card > p:first-child {
+  font-weight: bold;
+  font-size: 12pt;
+}
+.card > p:last-child {
+  color: grey;
+}
+
+.card {
+  width: 95%;
+}
+
+.totalPayable {
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.detailsFormInputs,
+.paymentMethods {
+  margin-top: 5%;
+}
+
+.dfi_2,
+.dfi_3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dfi_2_mobile,
+.dfi_3_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .infocard_1 {
+    margin: 10% auto;
+  }
+
+  .summarySection,
+  .paymentSection {
+    width: 100%;
+  }
+
+  .paymentSection > h1 {
+    display: none;
+  }
+
+  .card {
+    width: 85%;
+  }
+  .dfi_2,
+  .dfi_3 {
+    display: none;
+  }
+
+  .dfi_2_mobile,
+  .dfi_3_mobile {
+    display: block;
+  }
+}

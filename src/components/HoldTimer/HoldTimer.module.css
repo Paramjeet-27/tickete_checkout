@@ -1,0 +1,18 @@
+.container {
+  background-color: black;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  padding: 0.7rem 0rem;
+  position: sticky;
+  top: 0%;
+  z-index: 10;
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    font-size: 10pt;
+    padding: 0.25rem 0rem;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,62 @@
+.outerContainer {
+  padding: 0.5% 0rem;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 0.2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container div {
+  border-radius: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+div.help:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.checkout {
+  color: grey;
+}
+
+.checkout,
+.help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout > p:first-child,
+.help > p:first-child {
+  padding: 0.25rem;
+}
+
+.mobileHomeArrow {
+  display: none;
+}
+
+.webHomeIcon:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 390px) {
+  .webHomeIcon {
+    display: none;
+  }
+
+  .mobileHomeArrow {
+    display: block;
+  }
+
+  .help > p:last-child {
+    display: none;
+  }
+}

@@ -1,0 +1,57 @@
+.container {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 90%;
+  margin: 5% auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container > div {
+  width: 49%;
+}
+
+.chatOption {
+  border-radius: 10px;
+  background-color: rgb(255, 248, 249);
+  width: 70%;
+  margin-top: 15%;
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.headings_chats p:first-child {
+  font-size: 16pt;
+  font-weight: bold;
+}
+.headings_chats p:last-of-type {
+  color: grey;
+}
+
+.chatOptionMobile {
+  display: none;
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container > div {
+    width: 100%;
+  }
+
+  .chatOption {
+    display: none;
+  }
+
+  .accordionContainer {
+    margin: 10% auto;
+  }
+
+  .container > .chatOptionMobile {
+    display: block;
+    display: flex;
+  }
+}
